@@ -1,2 +1,243 @@
 /* CSS BY Carolina Brown *
-/* @import
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap'); */
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --lavender: #6b8fe7;
+  --purple: #484fb7;
+  --yellow:#e9bb57;
+  --pink: #d9526f;
+  --dark-grey: #1e1e1e;
+  --white: #ffffff;
+  --font-main: 'Inter', sans-serif;
+  --font-header: 'Kavoon', cursive;
+  --max-width: 450px;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    background-color: var(--lavender);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: var(--font-header);
+}
+
+header {
+    background-color: var(--purple);
+    text-align: center;
+    padding: 1.5em 1em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header p {
+  margin: 0.3em 0 0;
+  font-size: 0.9em;
+}
+
+/* Main nav styles */
+
+nav {
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav h2 {
+  margin: 0 0 0.5em;
+  font-size: 1.2em;
+  color: var(--dark-grey);
+}
+
+nav a {
+  display: block;
+  background-color: var(--white);
+  color: var(--purple);
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.4em auto;
+  width: 80%;
+  padding: 0.7em;
+  border-radius: 5px;
+}
+
+/* Services tiles section */
+
+section {
+  margin: 1em;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+section h2 {
+  color: var(--white);
+  margin-bottom: 0.3em;
+  text-align: left;
+}
+
+section h3 {
+  color: var(--yellow);
+  margin-top: 0.5em;
+  font-weight: 600;
+}
+
+.service {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0.7em 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service h4 {
+  margin: 0.3em 0;
+  color: #3a2a92;
+  font-weight: 600;
+}
+
+.service p {
+  color: var(--dark-grey);
+}
+
+/* Why choose us section styles */
+
+.why-choose {
+  background-color: var(--pink);
+  padding: 1em;
+  text-align: left;
+}
+
+.why-choose h2 {
+  color: var(--white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6em;
+  margin-top: 1em;
+}
+
+.grid div {
+  color: var(--dark-grey);
+  padding: 2em;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Why choose us containers individual colors */
+
+#teal {
+    background-color: var(--teal);
+}
+
+#lavender {
+    background-color: var(--lavender);
+}
+
+#yellow {
+    background-color: var(--yellow);
+}
+
+#white {
+    background-color: var(--white);
+}
+
+/* Pricing tables styles */
+
+.price {
+  background-color: var(--purple);
+  color: var(--yellow);
+  padding: 1em;
+}
+
+.price h2 {
+  color: var(--white);
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  border: 2px solid var(--yellow);
+  padding: 0.6em;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  font-size: 0.95em;
+}
+
+th {
+  background-color: #f6c344;
+  color: #3a2a92;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: var(--pink);
+  color: var(--white);
+  text-align: left;
+  padding: 1.5em 1em;
+  margin-top: 1.5em;
+}
+
+footer h2 {
+  font-family: 'Kavoon', cursive;
+}
+
+footer button {
+  background-color: var(--white);
+  color: var(--dark-grey);
+  border: none;
+  border-radius: 12px;
+  padding: 2em 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.8em;
+  width: 90%;
+  box-shadow: 0 6px 10px var(--dark-grey);
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 0.8em;
+  text-align: center;
+  padding: 2em;
+}
+
+.copyright a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.container {
+    width: 100%;      
+    max-width: 450px; 
+    margin: 0 auto;  
+    background-color: var(--purple);
+}
